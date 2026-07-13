@@ -13,6 +13,14 @@ export default function Contact() {
     setStatus('submitting');
     setErrorMsg('');
 
+    if (!supabase) {
+      setStatus('error');
+      setErrorMsg(
+        "Le formulaire est momentanément indisponible. Écrivez-nous directement à contact@aeed-togo.org."
+      );
+      return;
+    }
+
     const form = e.currentTarget;
     const formData = new FormData(form);
     const name = formData.get('name') as string;
