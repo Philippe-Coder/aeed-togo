@@ -1,5 +1,13 @@
 import { useState, type FormEvent } from 'react';
-import { Send, CheckCircle2, AlertCircle, Loader2, MapPin, Mail } from 'lucide-react';
+import {
+  Send,
+  CheckCircle2,
+  AlertCircle,
+  Loader2,
+  MapPin,
+  Mail,
+  Phone,
+} from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
@@ -16,7 +24,7 @@ export default function Contact() {
     if (!supabase) {
       setStatus('error');
       setErrorMsg(
-        "Le formulaire est momentanément indisponible. Écrivez-nous directement à contact@aeed-togo.org."
+        'Le formulaire est momentanément indisponible. Contactez-nous directement à infoaeedtogo@gmail.com ou au +228 79 29 01 13.'
       );
       return;
     }
@@ -90,9 +98,29 @@ export default function Contact() {
                   <h3 className="font-display text-base font-semibold text-neutral-900">
                     Email
                   </h3>
-                  <p className="mt-1 text-sm text-neutral-600">
-                    contact@aeed-togo.org
-                  </p>
+                  <a
+                    href="mailto:infoaeedtogo@gmail.com"
+                    className="mt-1 block text-sm text-neutral-600 transition-colors hover:text-primary-700"
+                  >
+                    infoaeedtogo@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-100 text-primary-700">
+                  <Phone className="h-6 w-6" />
+                </div>
+                <div>
+                  <h3 className="font-display text-base font-semibold text-neutral-900">
+                    Téléphone
+                  </h3>
+                  <a
+                    href="tel:+22879290113"
+                    className="mt-1 block text-sm text-neutral-600 transition-colors hover:text-primary-700"
+                  >
+                    +228 79 29 01 13
+                  </a>
                 </div>
               </div>
             </div>

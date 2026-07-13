@@ -1,4 +1,4 @@
-import { Heart, MapPin, Mail, ArrowUp } from 'lucide-react';
+import { Heart, MapPin, Mail, Phone, ArrowUp } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Accueil', href: '#accueil' },
@@ -78,9 +78,23 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="mt-5 space-y-3">
-              <li className="flex items-center gap-2 text-sm text-white/60">
-                <Mail className="h-4 w-4 shrink-0" />
-                contact@aeed-togo.org
+              <li>
+                <a
+                  href="mailto:infoaeedtogo@gmail.com"
+                  className="flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-white"
+                >
+                  <Mail className="h-4 w-4 shrink-0" />
+                  infoaeedtogo@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+22879290113"
+                  className="flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-white"
+                >
+                  <Phone className="h-4 w-4 shrink-0" />
+                  +228 79 29 01 13
+                </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-white/60">
                 <MapPin className="h-4 w-4 shrink-0" />
