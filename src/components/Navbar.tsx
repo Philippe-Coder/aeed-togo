@@ -5,6 +5,7 @@ const NAV_LINKS = [
   { label: 'Accueil', href: '#accueil' },
   { label: 'Historique', href: '#historique' },
   { label: 'Missions', href: '#missions' },
+  { label: 'Galerie', href: '#galerie' },
   { label: 'Vision & Valeurs', href: '#vision' },
   { label: 'Nous aider', href: '#aider' },
   { label: 'Contact', href: '#contact' },

@@ -1,25 +1,26 @@
+const pexels = (id: number, width: number) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${width}`;
+
 export const IMAGES = {
-  hero: 'https://images.pexels.com/photos/8500625/pexels-photo-8500625.jpeg?auto=compress&cs=tinysrgb&w=1920',
+  hero: pexels(14909652, 1920),
   heroAlt:
-    'Enfants africains souriants dans une salle de classe, concentrés sur leurs études',
-  about:
-    'https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  aboutAlt: 'Enfants dans une salle de classe en Afrique, apprenant ensemble',
-  mission1:
-    'https://images.pexels.com/photos/8500306/pexels-photo-8500306.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  mission1Alt: 'Enfants lisant des livres dans une bibliothèque scolaire',
-  mission2:
-    'https://images.pexels.com/photos/7273787/pexels-photo-7273787.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  mission2Alt: 'Élèves africains dans une salle de classe, portant des uniformes',
-  mission3:
-    'https://images.pexels.com/photos/36384099/pexels-photo-36384099/free-photo-of-women-s-rural-meeting-for-community-development.jpeg?auto=compress&cs=tinysrgb&w=1200',
-  mission3Alt: 'Femmes africaines lors d\u2019une réunion communautaire rurale',
-  vision:
-    'https://images.pexels.com/photos/3894375/pexels-photo-3894375.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  visionAlt: 'Femmes africaines souriantes, autonomisation communautaire',
-  donate:
-    'https://images.pexels.com/photos/16869637/pexels-photo-16869637.jpeg?auto=compress&cs=tinysrgb&w=1600',
-  donateAlt: 'Élèves dans une bibliothèque moderne, lisant des livres',
-  cta: 'https://images.pexels.com/photos/8499562/pexels-photo-8499562.jpeg?auto=compress&cs=tinysrgb&w=1920',
-  ctaAlt: 'Enfants africains apprenant dans une salle de classe',
+    'Écoliers ouest-africains en uniforme bleu dans la cour de leur école',
+  about: pexels(32293359, 1600),
+  aboutAlt:
+    "Élève levant la main dans une salle de classe au Togo, entourée de camarades en uniforme",
+  mission1: pexels(26855714, 1200),
+  mission1Alt: 'Deux élèves lisant et écrivant sur leurs pupitres en classe',
+  mission2: pexels(36188072, 1200),
+  mission2Alt:
+    "Élèves ouest-africains en uniforme rassemblés dans la cour de récréation",
+  mission3: pexels(21036083, 1200),
+  mission3Alt:
+    'Femmes ouest-africaines en pagne wax lors d’une réunion communautaire',
+  vision: pexels(28646079, 1600),
+  visionAlt:
+    "Jeune fille écrivant avec application à son pupitre dans une salle de classe",
+  donate: pexels(28593044, 1600),
+  donateAlt: 'Enfants souriants à la fenêtre de leur salle de classe',
+  ctaAlt: 'Enfants ouest-africains apprenant dans une salle de classe',
+  cta: pexels(34211747, 1920),
 };

@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Missions from './components/Missions';
+import Gallery from './components/Gallery';
 import Vision from './components/Vision';
 import Donate from './components/Donate';
 import Contact from './components/Contact';
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <About />
         <Missions />
+        <Gallery />
         <Vision />
         <Donate />
         <Contact />
