@@ -39,29 +39,19 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-8xl items-center justify-between px-6 py-4 lg:px-10">
         <button
           onClick={() => handleNav('#accueil')}
-          className="group flex items-center gap-3"
+          className="group flex items-center"
+          aria-label="AEED-TOGO — retour à l'accueil"
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 shadow-lg shadow-primary-900/20 transition-transform group-hover:scale-105">
-            <span className="font-display text-xl font-semibold text-white">
-              A
-            </span>
-          </div>
-          <div className="flex flex-col items-start leading-none">
-            <span
-              className={`font-display text-lg font-semibold transition-colors ${
-                scrolled ? 'text-neutral-950' : 'text-white'
-              }`}
-            >
-              AEED-TOGO
-            </span>
-            <span
-              className={`mt-0.5 text-[11px] font-medium tracking-wide transition-colors ${
-                scrolled ? 'text-neutral-500' : 'text-white/70'
-              }`}
-            >
-              Éducation · Développement
-            </span>
-          </div>
+          <img
+            src="/logo-wide.png"
+            alt="AEED-TOGO — Association en faveur de l'Éducation de l'Enfant et du Développement au Togo"
+            className={`w-auto transition-all duration-500 group-hover:scale-105 ${
+              scrolled
+                ? 'h-12'
+                : // Sur le hero sombre, le vert du logo a besoin d'un fond clair pour rester lisible.
+                  'h-14 rounded-xl bg-white/90 px-3 py-1.5 shadow-lg backdrop-blur-sm'
+            }`}
+          />
         </button>
 
         <div className="hidden items-center gap-1 lg:flex">

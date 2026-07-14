@@ -21,12 +21,14 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary-600 to-primary-800">
-                <span className="font-display text-xl font-semibold text-white">
-                  A
-                </span>
-              </div>
+            <div className="flex items-center gap-4">
+              {/* L'emblème seul : le texte vert du logo complet serait illisible
+                  sur ce fond sombre, et ferait doublon avec le nom ci-contre. */}
+              <img
+                src="/favicon.png"
+                alt="Logo AEED-TOGO"
+                className="h-14 w-14 shrink-0"
+              />
               <div>
                 <p className="font-display text-lg font-semibold">AEED-TOGO</p>
                 <p className="text-xs text-white/50">
